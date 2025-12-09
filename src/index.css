@@ -25,7 +25,8 @@
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  justify-content: center;
+  align-items: center;
   min-width: 320px;
   min-height: 100vh;
   background-color: var(--bg-color);
@@ -48,15 +49,18 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: var(--primary-color);
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-input[type="text"], input[type="date"] {
+input[type="text"],
+input[type="date"] {
   border-radius: 8px;
   border: 1px solid #444;
   padding: 0.6em 1.2em;
@@ -67,6 +71,6 @@ input[type="text"], input[type="date"] {
 }
 
 input:focus {
-    outline: 2px solid var(--primary-color);
-    border-color: transparent;
+  outline: 2px solid var(--primary-color);
+  border-color: transparent;
 }
